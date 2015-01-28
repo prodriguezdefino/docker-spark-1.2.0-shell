@@ -31,11 +31,6 @@ sed s/HOSTNAME/$MASTER_NODE/ $SPARK_HOME/yarn-remote-client/yarn-site.xml.templa
 chmod 755 $SPARK_HOME/conf/spark-env.sh
 
 echo " "
-echo "Adding itself as a node in cluster..."
-echo " "
-#/etc/remote-add-node.sh $MASTER_NODE $IP $HOSTNAME
-
-echo " "
 echo "Starting Spark Shell..."
 echo " "
 . $SPARK_HOME/conf/spark-env.sh
