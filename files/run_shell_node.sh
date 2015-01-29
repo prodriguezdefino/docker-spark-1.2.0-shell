@@ -15,6 +15,11 @@ echo "Environment Variables: "
 echo " "
 env
 
+IP=$(ip -o -4 addr list eth0 | perl -n -e 'if (m{inet\s([\d\.]+)\/\d+\s}xms) { print $1 }')
+echo " "
+echo "NODE_IP=$IP"
+echo " "
+
 ## configure the hadoop and spark installations
 echo " "
 echo "Preparing Apache Spark..."
