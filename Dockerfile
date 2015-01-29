@@ -1,6 +1,6 @@
 ## Apache Spark Shell Node
 #
-FROM prodriguezdefino/spark-1.2.0-base:latest
+FROM prodriguezdefino/sparkbase:1.2.0
 MAINTAINER prodriguezdefino prodriguezdefino@gmail.com
 
 # will expose the port for monitoring through the spark context published web page 
