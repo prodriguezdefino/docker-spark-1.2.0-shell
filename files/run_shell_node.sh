@@ -34,5 +34,4 @@ chmod 755 $SPARK_HOME/conf/spark-env.sh
 echo " "
 echo "Starting Spark Shell..."
 echo " "
-. $SPARK_HOME/conf/spark-env.sh
 $SPARK_HOME/bin/spark-shell --driver-memory 1g --executor-memory 1g --executor-cores 1
